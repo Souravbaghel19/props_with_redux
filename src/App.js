@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import HeaderContainer from './Containers/HeaderContainer';
+import HomeContainer from './Containers/HomeContainer';
+//import User from './Component/User';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/*<h1>Props with Redux</h1>
+      <User  data={{name:"Sonu Baghel" , age:"23"}}/>*/}
+     <HeaderContainer />
+      <HomeContainer />      
     </div>
   );
 }
